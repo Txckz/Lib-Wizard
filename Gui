@@ -764,7 +764,7 @@ function Library:create(options)
 	}):round(7)
 
 	local profilePictureContainer = profile:object("ImageLabel", {
-		Image = rbxassetid://14126599919 --Players:GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100),
+		Image = Players:GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100),
 		Theme = {BackgroundColor3 = {"Secondary", 10}},
 		AnchorPoint = Vector2.new(0, 0.5),
 		Position = UDim2.new(0, 10, 0.5),
